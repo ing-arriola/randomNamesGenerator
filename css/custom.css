@@ -36,6 +36,27 @@ form {
     border: 1px solid #56CCF2; 
     background: rgb(219, 246, 255); 
 }
+
+.danger {
+    list-style: none;
+    width: 87%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    color: white;
+    background: rgb(236, 11, 11); 
+}
+
+.success {
+    list-style: none;
+    width: 87%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid rgb(17, 202, 73); 
+    background: rgb(98, 218, 134); 
+}
+
 .lista li:last-child{
     margin:0;
 }
