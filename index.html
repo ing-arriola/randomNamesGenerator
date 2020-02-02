@@ -12,13 +12,14 @@
 <body>
     <div class="container">
         <div id="contenido" class="contenido">
-            <h1>Generador de Nombres</h1>
+            <h1>Random name generator</h1>
+            <h2>By: Jaime Arriola</h2>
             <form action="#" id="generar-nombre">
                 <div class="row">
                     <div class="six columns">
-                        <label for="origen">Origen del Nombre:</label>
+                        <label for="origen">Country of origin:</label>
                         <select class="u-full-width" id="origen">
-                            <option value=''>-- Seleccione --</option>
+                            <option value=''>-- Select --</option>
                             <option value="argentina">Argentina</option>
                             <option value="brazil">Brasil</option>
                             <option value="colombia">Colombia</option>
@@ -29,13 +30,13 @@
                             <option value="portugal">Portugal</option>
                             <option value="spain">España</option>
                         </select>
-                        <label for="genero">Genero:</label>
+                        <label for="genero">Gender:</label>
                         <select class="u-full-width" id="genero">
-                                <option value=''>-- Seleccione --</option>
-                                <option value="male">Hombre</option>
-                                <option value="female">Mujer</option>
+                                <option value=''>-- Select --</option>
+                                <option value="male">Man</option>
+                                <option value="female">Woman</option>
                         </select>
-                        <label>Nombres a Generar</label>
+                        <label>How many names do you want? </label>
                         <input type="number" id="numero" class="u-full-width" min="5" max="15" value="5">
                         <input class="button-primary u-full-width" type="submit" value="Generar">
                     </div>

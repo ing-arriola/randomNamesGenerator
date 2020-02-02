@@ -23,6 +23,37 @@ function loadName(e){
     if(amount !== ''){
         url+=`amount=${amount}&`
     }
-    
-   
+    //new instance of httpRequest
+    const xhr=new XMLHttpRequest()
+    //Set the object
+    xhr.open('GET',url,true)
+
+    xhr.onload=function(){
+        if(this.status === 200){
+            //Getting the DOM element to render the results
+            const result=document.getElementById('resultado')
+            //Getting the data
+            let answer=JSON.parse(this.responseText)
+            //a header for results :)
+            let headerOfResults=document.createElement('h3')
+            headerOfResults.innerHTML='Generated Names'
+            //If the result sectio has any child.. remove it all of them :)
+            while(result.hasChildNodes()){
+                result.removeChild(result.firstChild)
+            }
+            //Adding the header :)
+            result.appendChild(headerOfResults)
+            answer.forEach(element => {
+                let nombre=document.createElement('h6')
+                nombre.classList.add('lista')
+                
+                nombre.innerHTML=`${element.name}`
+                console.log(nombre)
+                result.appendChild(nombre)
+            });
+            
+        }
+    }
+
+    xhr.send()
 }

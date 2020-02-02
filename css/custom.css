@@ -1,7 +1,8 @@
 body {
-    background: #56CCF2; 
-    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  
-    background: linear-gradient(to right, #2F80ED, #56CCF2); 
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .contenido {
     margin-top: 40px;
@@ -9,9 +10,18 @@ body {
 h1 {
     color: white;
     text-align: center;
-    font-size: 34px;
+    font-size: 50px;
 }
-
+h2 {
+    color: white;
+    text-align: center;
+  
+}
+h3 {
+  
+    text-align: center;
+  
+}
 form {
     background-color: white;
     padding: 50px;
